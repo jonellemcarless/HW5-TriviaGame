@@ -2,37 +2,37 @@ var card = $("#quiz-area");
 
 // Question set
 var questions = [{
-  question: "What was the first full length CGI movie?",
-  answers: ["A Bug's Life", "Monsters Inc.", "Toy Story", "The Lion King"],
-  correctAnswer: "Toy Story"
+  question: "Who is the current president of France?",
+  answers: ["Marine Le Pen", "Emmanuel Macron", "Nicolas Sarkozy", "François Hollande"],
+  correctAnswer: "Emmanuel Macron"
 }, {
-  question: "Which of these is NOT a name of one of the Spice Girls?",
-  answers: ["Sporty Spice", "Fred Spice", "Scary Spice", "Posh Spice"],
-  correctAnswer: "Fred Spice"
+  question: "Which is not a color on the French flag?",
+  answers: ["Red", "White", "Gold", "Blue"],
+  correctAnswer: "Gold"
 }, {
-  question: "Which NBA team won the most titles in the 90s?",
-  answers: ["New York Knicks", "Portland Trailblazers", "Los Angeles Lakers", "Chicago Bulls"],
-  correctAnswer: "Chicago Bulls"
+  question: "Which French king built the Palace of Versailles",
+  answers: ["Louis XIV", "Louis XV", "Louis XVI", "Louis XVII"],
+  correctAnswer: "Louis XIV"
 }, {
-  question: "Which group released the hit song, \"Smells Like Teen Spirit\"?",
-  answers: ["Nirvana", "Backstreet Boys", "The Offspring", "No Doubt"],
-  correctAnswer: "Nirvana"
+  question: "In what military conflict did Jeanne d’Arc (Joan of Arc) serve?",
+  answers: ["The Seven Years' War", "Hundred Years' War", "The French and Indian War", "La Fronde (1650-1653)"],
+  correctAnswer: "Hundred Years' War"
 }, {
-  question: "Which popular Disney movie featured the song, \"Circle of Life\"?",
-  answers: ["Aladdin", "Hercules", "Mulan", "The Lion King"],
-  correctAnswer: "The Lion King"
+  question: "Which country does not border mainland France?",
+  answers: ["Luxembourg", "Belgium", "Austria", "Italy"],
+  correctAnswer: "Austria"
 }, {
-  question: "Finish this line from the Fresh Prince of Bel-Air theme song: \"I whistled for a cab and when it came near, the license plate said...\"",
-  answers: ["Dice", "Mirror", "Fresh", "Cab"],
-  correctAnswer: "Fresh"
+  question: "France has a large car market with several brands. Which brand of cars did not originate from France?",
+  answers: ["Dacia", "Peugeot", "Citroën", "Renault"],
+  correctAnswer: "Dacia"
 }, {
-  question: "What was Doug's best friend's name?",
-  answers: ["Skeeter", "Mark", "Zach", "Cody"],
-  correctAnswer: "Skeeter"
+  question: "Who is not a French philosopher from the Enlightenment era?",
+  answers: ["Voltaire", "Molière", "Montesquieu", "Jean-Jacques Rousseau"],
+  correctAnswer: "Molière"
 }, {
-  question: "What was the name of the principal at Bayside High in Saved By The Bell?",
-  answers: ["Mr.Zhou", "Mr.Driggers", "Mr.Belding", "Mr.Page"],
-  correctAnswer: "Mr.Belding"
+  question: "Identify a type of French red wine:",
+  answers: ["Champagne", "Sémillon", "Sauvignon Blanc", "Merlot"],
+  correctAnswer: "Merlot"
 }];
 
 // Variable that will hold the setInterval
@@ -42,7 +42,7 @@ var game = {
 
   correct: 0,
   incorrect: 0,
-  counter: 120,
+  counter: 100,
 
   countdown: function() {
     game.counter--;
@@ -56,7 +56,7 @@ var game = {
   start: function() {
     timer = setInterval(game.countdown, 1000);
 
-    $("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>120</span> Seconds</h2>");
+    $("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>100</span> Seconds</h2>");
 
     $("#start").remove();
 

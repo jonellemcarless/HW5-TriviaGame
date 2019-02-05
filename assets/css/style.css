@@ -5,7 +5,7 @@ body {
 
 body {
   text-align: center;
-  background-image: url("../images/tacky.jpg");
+  background-image: url("../images/background3.jpg");
 }
 
 #wrapper {
@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
   padding: 5% 0;
   margin: 5% auto;
-  background-color: #fff17a;
+  background-color: #b7a4fa;
 }
 
 #sub-wrapper {
@@ -35,7 +35,7 @@ button {
 
 h1 {
   margin-bottom: 50px;
-  font-family: Geo, sans-serif;
+  font-family: Cookie, sans-serif;
   font-size: 6.5em;
   font-weight: bold;
   color: blue;
@@ -53,12 +53,13 @@ h3 {
 
 #start {
   margin-top: 10%;
-  background: pink;
+  background: rgb(255, 193, 231);
   border: 2px solid blue;
 }
 
 #quiz-area h2 {
   margin-top: 50px;
+  font-family: Old Standard TT, sans-serif;
 }
 
 button:hover {
